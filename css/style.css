@@ -1,9 +1,20 @@
 :root{
-    
+    --menu-lateral:#000000;
+    --fundo-claro:#a5a2a2;
+    --fundo-claro2:#4b4a4a;
+    --cor4: #3a3636; 
 
+    --texto-calro:#252424;
+    --texto-escuro: #f1ebeb;
 
+    --texto-estilo:#000000;
+    --texo-escuro:#f3eeee;
+}
 
-
-
-
+body{
+    background: var(--cor4);
+}
+h1{
+    color: #000000;
+    text-align: center;
 }
