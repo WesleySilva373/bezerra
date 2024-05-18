@@ -1,21 +1,27 @@
 /* variaves cores */
 :root{
-    --menu-lateral:#bb2525;
+    --menu-lateral:#DC143C;
     --fundo-claro:#a5a2a2;
     --fundo-claro2:#000000;
     --cor4: #3a3636; 
 
     --texto-calro:#252424;
-    --texto-escuro: #f1ebeb;
+    --texto-escuro: #080808;
     --texto-houver: #9c2525;
 
     --texto-estilo:#000000;
     --texo-escuro:#f3eeee;
+
+    --borda-escura:#7125c700;
+    --borda-clara:#ffffffa9;
+    --sombra-clara:#0cc06c00;
+
+    --sobra-clara:rgb(0, 58, 216);
 }
 /*  css geral */
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: #f3eeee;
+    color: #1b1a1a;
     color: var(--texto-escuro);
     background: var(--fundo-claro2);
 }
@@ -23,23 +29,75 @@ a{
     color: var(--texo-escuro);
     text-decoration: none;
 }
-a:houver{
+a:hover{
     color: var(--texto-calro);
     text-decoration: none;  /* remove o underline das redes sociais */
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Times New Roman', Times, serif;
+    
 }
 /* cabeçalho */
-#header{
+
+#header{ 
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300;
+    width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: ; 
+    z-index: 99; 
     padding: 0 15px;
     background: var(--menu-lateral);
-    overflow-y: auto;
+    overflow-y: auto; /*  */
+} 
+#header .perfil img{
+    margin: 15px auto;
+    display: block;
+    width: 170px;
+    border: 2px solid var(--borda-clara);
+    box-shadow: 0px 0px 25px 0px var(--sobra-clara);
+}
+#header .perfil h1{
+    font-size: 24px;
+    margin: 25px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+/* link nome */
+#header .perfil h1 a,
+#header .perfil h1 a:hover{
+/* color: ;
+text-decoration: none; */
+}
+#header .perfil .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: var(--texto-calro);
+    color: var(--texo-escuro);
+    line-height: 1;
+    padding: 8px 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px ;
+    height: 35px;
+    transition: 0.3;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);  /* coriigir  */
+}
+
+.perfil .social-links a:hover
+.social-links i:hover{
+    font-size: 18px;
+    display: inline-block;
+    background: whitesmoke ;
+    color: black ;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
 }
