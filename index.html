@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +23,21 @@
     <!--  css principal -->
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+      .text-light {
+          color: white; /* Primeira cor do título */
+      }
+
+      .highlight {
+          color: #000000; /* Segunda cor do título */
+      }
+  </style>
+
 </head>
 <body>
+
+
+  
   <!--   botao para alterar o menu mobile -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -29,11 +45,13 @@
   <header id="header">
     <div class="d-flex flex-colunm">
 
+
         <div class="perfil">
         <img class="img-fluid rounded-circle" src="img/logo guh.jpg" alt="">
 
        
-        <h1 class="text-light"> Restaurante Bezerra </h1>
+        <h1 class="text-light">Restaurante <span class="highlight">Bezerra</span></h1>
+
 
         <div class="social-links mt-3 text-center">  <!-- redes sociais -->
 
