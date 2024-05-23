@@ -215,8 +215,8 @@ color: var(--texto-calro);
 #hero h1{
     margin: 0 0 10px 0;
     font-size: 64px;
-    font-weight: 200;
-    line-height: 56px;
+    font-weight: 100;
+    line-height: 60px;
     line-height: 85px;
     color: var(--texto-branco);
 }
