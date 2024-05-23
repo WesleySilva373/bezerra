@@ -1,26 +1,26 @@
 /* variaves cores */
 :root{
     --menu-lateral:#DC143C;
-    --fundo-claro:#ffffff;
+    --fundo-claro:#160f0f;
     --fundo-claro2:#000000;
-    --cor4: #3a3636; 
+    --cor4: #000000; 
 
     --texto-calro:#252424;
     --texto-escuro: #080808;
     --texto-houver: #9c2525;
 
-    --texto-estilo:#000000;
-    --texto-escuro:#f3eeee;
+    --texto-estilo:#070606;
+    --texto-escuro:#ebdddd;
     --texto-opaco:#6e6767;
     --texto-detlhe:#3d8ef7;
-    --texto-branco:#ffffff;
+    --texto-branco:#d8cece;
 
 
     --borda-escura:#7125c700;
     --borda-clara:#ffffffa9;
     --sombra-clara:#0cc06c00;
 
-    --sobra-clara:rgb(0, 58, 216);
+    --sobra-clara:rgb(163, 182, 233);
 }
 /*  css geral */
 body{
@@ -220,9 +220,27 @@ color: var(--texto-calro);
     line-height: 85px;
     color: var(--texto-branco);
 }
+
+#hero p{
+    font-size: 30px;
+}
 #hero p span{
     color: var(--texto-branco);
     padding-bottom: 5px;
     letter-spacing: 1px;
     border-bottom: 3px solid var(--cor4);
+}
+@media(max-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media(max-width: 768px){
+    #hero h1{
+        font-size: 75px;
+        line-height: 36px;
+    }
+    #hero p {
+        font-size: 25px;
+    }
 }
