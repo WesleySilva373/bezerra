@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 28px;
     color: var(--texto-calro);
     line-height: 0;
+    
 }
 .back-to-top:hover{
     background: var(--texto-branco);
