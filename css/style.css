@@ -294,7 +294,7 @@ background: var(black);
    color: var(--texo-escuro);
 }
 .section-title h2::after{
-    content: ;
+    content: 0;
     position: absolute;
     display: block;
     width: 50px;
@@ -302,4 +302,78 @@ background: var(black);
     background: var(--texto-detlhe);
     bottom: 0;
     left: 0;
+}
+.section-title p{
+    margin-bottom: 0;
+}
+
+/* sobre  */
+
+.sobre .content h3{
+    font-weight: 700;
+    font-size:26px ;
+    color: var(white);
+}
+.sobre .comtent ul{
+    list-style: none;
+    padding: 0;
+}
+.sobre .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center ;
+}
+.sobre .content ul strong{
+    margin-left: 10px;
+
+}
+.sobre .content ul i{
+    margin-left: 10px;
+    color: var(--texto-detlhe);
+    margin-right: 10px;
+    line-height: 0;
+}
+/* conquistats  */
+/* Corrigindo a classe de "conquistas" */
+.conquistas {
+    padding-bottom: 30px;
+}
+
+/* Corrigindo a classe "count-box" */
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+
+/* Corrigindo o ícone dentro da classe "count-box" */
+.conquistas .count-box i {
+    display: block;
+    font-size: 44px;
+    color: var(--texto-detlhe); 
+    float: left;
+    line-height: 0;
+}
+
+/* Corrigindo o número dentro da classe "count-box" */
+.conquistas .count-box span {
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: white;
+    margin-left: 60px;
+}
+
+/* Corrigindo o parágrafo dentro da classe "count-box" */
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; 
+}
+.conquistas .count-box i:hover{
+    color: white;
+}
+.skills{
+    color: #000000;
 }
