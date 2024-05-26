@@ -1,6 +1,6 @@
 /* variaves cores */
 :root{
-    --menu-lateral:#DC143C;
+    --menu-lateral:#000000;
     --fundo-claro:#160f0f;
     --fundo-claro2:#000000;
     --cor4: #000000; 
@@ -11,7 +11,7 @@
 
     --texto-estilo:#070606;
     --texto-escuro:#ebdddd;
-    --texto-opaco:#6e6767;
+    --texto-opaco:#fffdfd;
     --texto-detlhe:#3d8ef7;
     --texto-branco:#d8cece;
 
@@ -23,12 +23,38 @@
     --sobra-clara:rgb(163, 182, 233);
 }
 /*  css geral */
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #1b1a1a;
     color: var(--texto-escuro);
     background: var(--fundo-claro2);
+    display: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom left, black, #151426, #60042B, #A60321, #590219, #151426, black) no-repeat;
+    background-size: 300%;
+    animation: backgroundAnimation 3s ease infinite;
 }
+@keyframes backgroundAnimation {
+    0% { background-position: 100% 0%; } /* Canto superior direito */
+            50% { background-position: 0% 100%; } /* Canto inferior esquerdo */
+            100% { background-position: 100% 0%; } /* Voltar ao canto superior direito */
+        }
+
+        .conteiner {
+            position: relative;
+            z-index: 2; /* Certifique-se de que o container está acima do fundo */
+            padding: 20px;
+            color: #c72e2e00;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Adicionei um fundo semi-transparente para melhor visibilidade do texto */
+            border-radius: 10px;
+        }
+        
+
+
+
 a{
     color: var(--texo-escuro);
     text-decoration: none;
@@ -185,6 +211,7 @@ text-decoration: none;
     font-size: 15px;
 }
 .nav-menua i, .nav-menua a:focus i {
+    
     font-size: 100px;
     padding-right: 10px;
 }
@@ -194,6 +221,7 @@ color: var(--texto-calro);
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu:focus i, .nav-menu li:hover>a i{
     color: var(--texto-detlhe);
+    padding: 10%;
 }
 /*  menu mobile  */
 .mobile-nav-toggle{
@@ -375,5 +403,6 @@ background: var(black);
     color: white;
 }
 .skills{
-    color: #000000;
+    color: #f8f6f6;
 }
+
