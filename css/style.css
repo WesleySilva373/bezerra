@@ -108,15 +108,23 @@ h1, h2, h3, h4, h5, h6{
     transition: all ease-in-out 0.5s;
     z-index: 99; 
     padding: 0 15px;
-    background: var(--menu-lateral);
-    overflow-y: auto; /*  */
+   /*  background: var(--menu-lateral); */
+    overflow-y: auto; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom left, black, #151426, #60042B, #A60321, #590219, #151426, black) no-repeat;
+    background-size: 300%;
+    animation: backgroundAnimation 3s ease infinite;
+    
 } 
 #header .perfil img{
     margin: 15px auto;
     display: block;
     width: 170px;
-    border: 2px solid var(--borda-clara);
-    box-shadow: 0px 0px 25px 0px var(--sobra-clara);
+    display: block;
+    width: 170px;
 }
 #header .perfil h1{
     font-size: 24px;
@@ -124,7 +132,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
     font-weight: 600;
     text-align: center;
-
+  
 }
 
 /* link nome 
@@ -406,3 +414,26 @@ background: var(black);
     color: #f8f6f6;
 }
 
+   h1{
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(270deg, #590219, #fffdfd, #000000, #151426, #3d8ef7);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+   
