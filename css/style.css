@@ -442,6 +442,50 @@ background: var(black);
     
 }
 
+
+.resumo .resume-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.resumo .resumo-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--texto-detlhe);
+    position: relative;
+}
+
+.resumo .resume-item h4{
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.resumo .resumo-item ul{
+    padding-left: 20px;
+}
+.resumo .resumo-item ul li{
+    padding-bottom: 20px;
+}
+
+
+.resumo .resumo-item::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -9px;
+   width: 16px;
+   height: 16px;
+   border-radius: 50px;
+   background: var(--texto-branco);
+   border: 2px solid var(--texto-detlhe);
+}
  h7 {
     font-size: 4em;
     font-weight: bold;
@@ -451,9 +495,9 @@ background: var(black);
     -webkit-text-fill-color: transparent;
     animation: gradientAnimation 10s ease infinite;
     font-size: 24px;
-    margin: 25px;
+    margin: 24px;
     padding: 0;
-    font-weight: 600;
+    font-weight: 200;
     text-align: center;
     display: flex;
 }
