@@ -496,7 +496,7 @@ background: var(black);
     margin: 0 auto 35px auto;  
     list-style: none;
     text-align: center;
-    background: var(black);
+    background: var(rgb(115, 9, 255));
     color: var(white);
     border-radius: 50px;
     padding: 2px 15px;
@@ -537,6 +537,45 @@ background: var(black);
     z-index: 2;
     opacity: 0;
 }
+.portfolio .portfolio-wrap .portfolio-links{
+    opacity: 1;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+    .portfolio .portfolio-wrap .portfolio-links a {
+        color: var(white);
+        font-size: 28px;
+        text-align: center;
+        background: var(--borda-clara);
+        transition: 0.3s;
+        width: 50%;
+    }
+
+    .portfolio.portfolio-wrap .portfolio-links a:hover{
+        background: var(white);
+
+    }
+
+    .portfolio.portfolio-wrap .portfolio-links a+a{
+        border-left: 1px solid var(black);
+    }
+    .portfolio .portfolio-wrap:hover::before{
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+    .portfolio .portfolio-wrap:hover .portfolio-links {
+        opacity: 1;
+        bottom: 0;
+    }
 
 
  h7 {
