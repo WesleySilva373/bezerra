@@ -577,6 +577,36 @@ background: var(black);
         bottom: 0;
     }
 
+    /* portfolio detalhes */
+    .services .icon-box{
+        margin-bottom: 20px;
+    }
+    .services.icon{
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        background: var(--texto-branco);
+        color:var(--borda-escura);
+        border-radius: 50px;
+        transition: 0,5s;
+        box-shadow: 5px 5px 5px white;
+    }
+.services.icon i {
+    color:var(--borda-escura);
+    font-size: 24px;
+    line-height: 0;
+}
+.services.icon-box:hover .icon{
+    background: var(--borda-clara);
+    transition: all 0.3s;
+}
+
+.services .icon-box:hover .icon i{
+    color: var(white);
+}
 
  h7 {
     font-size: 4em;
