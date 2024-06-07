@@ -108,16 +108,16 @@ h1, h2, h3, h4, h5, h6{
     transition: all ease-in-out 0.5s;
     z-index: 99; 
     padding: 0 15px;
-   /*  background: var(--menu-lateral); */
+    background: var(white);
     overflow-y: auto; 
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom left, black, #151426, #60042B, #A60321, #590219, #151426, black) no-repeat;
+  /*    background: linear-gradient(to bottom left, white, #151426, #151426, black , white) no-repeat;
     background-size: 300%;
-    animation: backgroundAnimation 3s ease infinite;
-    
+    animation: backgroundAnimation 3s ease infinite; 
+     */
 } 
 #header .perfil img{
     margin: 15px auto;
@@ -636,7 +636,7 @@ background: var(black);
     }
 }
 #skills{
-    font-size: 4em;
+    font-size: 4em;      
     font-weight: bold;
     background: white;
     -webkit-background-clip: text;
@@ -648,4 +648,6 @@ background: var(black);
     display: flex;
 }
 
-   
+   #depoimentos{
+    background: var(--cor4);
+   }
