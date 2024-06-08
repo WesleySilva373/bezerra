@@ -794,7 +794,7 @@ h7 {
 
 .depoimentos .depoimento-item p {
     font-style: italic;
-    margin: 0 15px 15px 15px;
+    margin: 0 15px 35px 15px;
     padding: 20px;
     background: #fceded7a;
     position: relative;
@@ -808,10 +808,24 @@ h7 {
     width: 0;
     height: 0;
     position: absolute;
-    bottom: 20px;
-    left: calc(50%-20px);
+    bottom: -20px;
+    left: calc(50% - 20px);
     border-top: 20px solid white;
     border-right: 20px solid transparent;
     border-left:  20px solid transparent;
    
+}
+
+.depoimentos .swiper-pagination{
+    margin-top: 20px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    border: 1px solid var(--texto-detlhe);
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active{
+    background: var(white);
 }
