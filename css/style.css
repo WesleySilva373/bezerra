@@ -92,6 +92,10 @@ h6 {
 
 }
 
+h2{
+    font-weight: bold;
+}
+
 /*  botão back to top= scroll */
 .back-to-top {
     position: fixed;
@@ -569,6 +573,7 @@ section {
 
 .portfolio .portfolio-item {
     margin-bottom: 30px;
+  
 }
 
 .portfolio #portfolio-filters {
@@ -601,7 +606,24 @@ section {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
+    
 
+}
+
+#portfolio{
+        background: #7c0101;
+        margin-bottom: 0; /* Ajuste aqui também se necessário */
+        margin-top: auto; /* Ajuste aqui também se necessário */
+}
+
+.services{
+    margin-top: 0px;
+}
+
+section {
+    padding: 60px; /* Você pode ajustar esse valor conforme necessário */
+    overflow: hidden;
+    
 }
 
 .portfolio .portfolio-wrap::before {
@@ -727,7 +749,7 @@ h7 {
 #skills {
     font-size: 4em;
     font-weight: bold;
-    background: rgb(0, 0, 0);
+    background: rgb(114, 114, 114);
     font-size: 24px;
     /*   margin: 25px; */
     /* padding: 0; */
@@ -735,6 +757,7 @@ h7 {
     text-align: center;
     display: block;
     width: 100%;
+
     /* Garanta que a largura ocupe toda a tela */
 }
 
@@ -828,4 +851,10 @@ h7 {
 }
 .depoimentos .swiper-pagination .swiper-pagination-bullet-active{
     background: var(white);
+}
+
+
+.site-link{
+    text-align: center ;
+    display: flex;
 }
