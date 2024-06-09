@@ -93,7 +93,7 @@ h6 {
 }
 
 h2{
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*  botão back to top= scroll */
@@ -719,7 +719,7 @@ section {
 h7 {
     font-size: 4em;
     font-weight: bold;
-    background: linear-gradient(270deg, #590219, #fffdfd, #000000, #151426, #3d8ef7);
+    background: linear-gradient(170deg, #da0606, #fffdfd);
     background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
