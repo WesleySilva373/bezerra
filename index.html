@@ -833,14 +833,40 @@
             </div><!-- fim info -->
           </div><!--  coluna esquerda -->
 
-          <div class="col-lg7-mt5 mt-lg-0 d-flex align-items-md-stretch" >
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
 
             <form action="#" method="post" class="email-form">
               <div class="row">
+
                 <div class="grupo-form col-md-6 ">
-                  <label for="nome" > digite o seu nome </label> <input type="text">
-                  
-                </div> <!--  fim grupo form -->
+                  <label for="nome"> digite o seu nome </label>
+                  <input type="text" name="nome" class="form-control" id="nome" placeholder=" Digite seu nome" required>
+                </div> <!--  fim grupo form  nome-->
+
+                <div class="grupo-form col-md-6 ">
+                  <label for="email"> Email </label>
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Seu email" required>
+                </div> <!--  fim grupo form email -->
+
+                <div class="grupo-form col-md-6 ">
+                  <label for="assunto">Assunto </label>
+                  <input type="text" name="assunto" class="form-control" id="assunto" placeholder=" Digite Seu Assunto"
+                    required>
+                </div><!-- fim grupo assunto -->
+
+                <div class="grupo-form col-md-6">
+                  <label for="mensagem"> Digite sua Mensagem</label>
+                  <textarea name="" class="form-control" id="mensagem" rows="10"
+                    placeholder="Digite sua Mensagem"></textarea>
+
+                  <div class="text-center">
+                    <button type="submit"> enviar 
+
+                    </button>
+
+                  </div>
+
+                </div> <!--  fim mensagem -->
 
 
               </div><!-- fim row forms -->
