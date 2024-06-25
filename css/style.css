@@ -368,6 +368,12 @@ text-decoration: none;
     }
 }
 
+@media(min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
 @media(max-width: 768px) {
     #hero h1 {
         font-size: 75px;
@@ -793,7 +799,7 @@ section {
 h7 {
     font-size: 4em;
     font-weight: bold;
-    background: linear-gradient(170deg, #da0606, #fffdfd);
+    background: linear-gradient(90deg, #da0606, #fffdfd);
     background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
